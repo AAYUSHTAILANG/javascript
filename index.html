@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5dc; /* Beige background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #ffffff; /* White container background */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: left; /* Left-align content text */
+        }
+
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center; /* Center-align headings */
+        }
+
+        pre {
+            white-space: pre-wrap;
+            font-size: 16px;
+            color: #343a40;
+        }
+
+        pre code {
+            display: block;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        .alert-info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border-color: #bee5eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">
+            <h2>JAVA SCRIPT</h2>
+            <pre>
+                1 Object-based language
+                2 &lt;script&gt;
+                3 For Dynamic HTML
+                4 Descendent C language
+
+                Variables in JS
+                ---------------
+                1 var (available in function entirely)
+                2 let (scope limited to block)
+                3 const (once initiated then cannot be assigned again)
+                * If no declaration is given then treated as a global variable.
+
+                Operators in JS
+                ----------------
+                1 if x=y: assignment
+                2 if x==y: compares value
+                   ex. if x=10 and y="10"
+                   (x==y) => TRUE
+                3 if x===y: check datatype as well
+                   (x===y) => FALSE
+            </pre>
+        </div>
+
+        <div class="content">
+            <h2>In JS, strings are allowed in</h2>
+            <pre>
+                1 " "
+                2 ' '
+                3 ` ` : advantage can take var value
+            </pre>
+        </div>
+
+        <div class="content">
+            <h2>Mode of getting JS into HTML</h2>
+            <pre>
+                1 External
+                2 Internal
+                3 Inline
+                * If all are written then whichever is written first will be executed first.
+            </pre>
+        </div>
+
+        <div class="content">
+            <h2>Limitations of Document.write()</h2>
+            <pre>
+                * It erases the preexisting content of the page as the page gets reloaded on click of the button
+                and inserts the new content only.
+
+                Solution: - Use getElementById()
+            </pre>
+            <div class="alert alert-info" role="alert">
+                <strong>Note:</strong> This is an informational alert.
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>POP-UP BOXES</h2>
+            <pre>
+                1 Alert() => used for displaying some message
+                2 Prompt() => used for accepting input from the user
+                3 Confirm() => getting confirmation from the user
+            </pre>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
